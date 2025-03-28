@@ -4,9 +4,9 @@
     <insert id="save">
         INSERT INTO card
         SET card_id = #{cardId}
-        , card_number = #{cardNumber}
-        , expiration_date = #{expirationDate}
-        , customer_id = #{customerId}
+          , card_number = #{cardNumber}
+          , expiration_date = #{expirationDate}
+          , customer_id = #{customerId}
     </insert>
 
     <select id="findMaxId">

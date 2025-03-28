@@ -1,10 +1,8 @@
-package com.green.simple_bank.card.model;
+package com.green.simple_bank.card;
 
 import com.green.simple_bank.Dummy;
-import com.green.simple_bank.card.CardMapper;
+import com.green.simple_bank.card.model.Card;
 import com.green.simple_bank.customer.CustomerMapper;
-import org.apache.ibatis.session.ExecutorType;
-import org.apache.ibatis.session.SqlSession;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

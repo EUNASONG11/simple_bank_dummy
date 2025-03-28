@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.green.simple_bank.account.AccountMapper">
+    <insert id="save">
+        INSERT INTO acc
+        SET account_id = #{accountId}
+          , account_type = #{accountType}
+          , balance = #{balance}
+          , customer_id = #{customerId}
+    </insert>
+
+    <select id="findMaxId">
+        SELECT IFNULL(MAX(account_id), 0) FROM acc
+    </select>
 
 </mapper>
